@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoComplete", "AutoComplet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestAutocomplete", "UnitTestAutocomplete\UnitTestAutocomplete.csproj", "{F56E4C95-2F05-4F4D-8FAF-A5D04962832F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationExample", "WebApplicationExample\WebApplicationExample.csproj", "{704A894F-BA0D-45E6-ABC6-B7E8F38840FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F56E4C95-2F05-4F4D-8FAF-A5D04962832F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56E4C95-2F05-4F4D-8FAF-A5D04962832F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56E4C95-2F05-4F4D-8FAF-A5D04962832F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704A894F-BA0D-45E6-ABC6-B7E8F38840FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704A894F-BA0D-45E6-ABC6-B7E8F38840FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704A894F-BA0D-45E6-ABC6-B7E8F38840FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704A894F-BA0D-45E6-ABC6-B7E8F38840FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

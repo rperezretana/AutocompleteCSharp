@@ -4965,6 +4965,7 @@ namespace WebApplicationExample
 "zuzana"};
 
             StaticCache.ContactsNameList = new AutoComplete.AutoCompleteTree();
+            //This executes only the first time, untill the application is recycled.
             for(int i =0;i<lotsOfnames.Count;i++)
             {
                 //combine the names to make list bigger

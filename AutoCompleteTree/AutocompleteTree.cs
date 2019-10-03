@@ -43,17 +43,7 @@ namespace AutoComplete
         public void AddWord(string word)
         {
             var original = word;
-            word = "";
-            // Using this lowercase algorithm is faster than 
-            // using the "ToLower" since it is lighter
-            for (int i = 0; i < original.Length; i++)
-            {
-                var kToFind = original[i];
-                if (kToFind < 91 && kToFind > 64) //lowercase
-                    word = word + (char)(kToFind + 32);
-                else
-                    word = word + kToFind;
-            }
+            word = word.ToLower();
             if (WordList.Contains(word)) //prevent duplicated terms/words
                 return;
 
@@ -117,7 +107,7 @@ namespace AutoComplete
             {
                 Ocounter++;
                 var kToFind = toFind[i];
-                if (kToFind < 91 && kToFind > 64) //lowercase is faster than .ToLower() method.
+                if (kToFind < 91 && kToFind > 64) 
                     kToFind = (char)(kToFind + 32);
 
                 if (navigator.ContainsKey(kToFind)

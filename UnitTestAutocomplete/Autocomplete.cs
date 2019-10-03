@@ -184,6 +184,5 @@ namespace UnitTestAutocomplete
             Assert.IsTrue(r[0] == expected, $"Searching '{toSearch}' found as first '{r[0]}' and a total of {r.Count} results");
         }
 
-
     }
 }

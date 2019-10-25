@@ -21,9 +21,7 @@ namespace AutoComplete
             //maybe used only for testing but may be better 
             //if initialized when app started.
             for (int i = 0; i < list.Count(); i++)
-            {
                 AddLowerCaseWord(list[i]);
-            }
         }
         public Dictionary<char, CharacterNode> Trees { get; set; }
         /// <summary>
@@ -102,13 +100,11 @@ namespace AutoComplete
 
             var navigator = Trees;
             List<string> result = new List<string>();
-
+            toFind = toFind.ToLower();
             for (int i = 0; i < toFind.Length; i++)
             {
                 Ocounter++;
                 var kToFind = toFind[i];
-                if (kToFind < 91 && kToFind > 64) 
-                    kToFind = (char)(kToFind + 32);
 
                 if (navigator.ContainsKey(kToFind)
                     &&
